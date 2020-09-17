@@ -23,7 +23,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
+
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -46,27 +46,45 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
-.nav-bar {
-    display: flex;
-
+* {
+  font-family: courier;
 }
+
+h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  
+}
+.header nav a {
+    display: flex;
+    flex-wrap: nowrap;
+    border: 2px ;
+    }
 
 .gallery {
 	display: flex;
 	flex-wrap: wrap;
-    justify-content: space-evenly;
-	align-content: space-around;
-	margin: 5%;
+  justify-content: space-around;
+  align-content: space-around;
+  margin: 5% 5% 5% 5%;
+  width 80%;
     
 }
 
 .bio {
 	display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  padding: 6%;
 }
 
+.bio-img {
+  width: 500px;
+}
+
+.
 .gallery img {
-	width: 22%;
+	display: inline-block;
 }
 
 @media screen and (max-width: 800px) {
